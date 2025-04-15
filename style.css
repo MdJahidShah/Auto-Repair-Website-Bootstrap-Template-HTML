@@ -1,0 +1,69 @@
+/* Hero Section Overlay */
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+  }
+  #heroCarousel {
+    position: relative;
+  }
+
+  .carousel-img {
+    height: 100vh;
+    object-fit: cover;
+  }
+
+  .hero-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    width: 100%;
+    padding: 0 15px;
+  }
+
+  .hero-overlay h1,
+  .hero-overlay p,
+  .hero-overlay a {
+    animation: fadeInDown 1s ease-out;
+  }
+
+  @keyframes fadeInDown {
+    0% {
+      opacity: 0;
+      transform: translate(-50%, -60%);
+    }
+    100% {
+      opacity: 1;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  /* Optional: dark overlay on images */
+  #heroCarousel::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 5;
+  }
+  /* Testimonial Images */
+  .testimonial-img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+  }
+  /* Footer Links */
+  .footer-top a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  .footer-top a:hover {
+    text-decoration: underline;
+  }
+
+
+  
